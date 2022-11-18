@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/style.css">
-        <!-- <script src="../code/code.js"></script> -->
+        <script src="../javascript/breathingExercise.js"></script>
     </head>
 
     <body>
         <div class="bg">
-            <div id="mainGridContainer">
+            <div id="subPageGridContainer">
                 <div id="imageItem"></div>
                 <a href="myMemories.html"><div id="item1"><p>Meine Erinnerungen</p></div></a>
                 <a href="calmWords.html"><div id="item2"><p>Beruhigende Worte</p></div></a>
@@ -17,6 +17,9 @@
                 <a href="entertainingVideos.html"><div id="item5"><p>Lustige Videos</p></div></a>
                 <a href="emergencyContacts.html"><div id="item6"><p>Notfall-Kontakte</p></div></a>
             </div>
+
+            <div id="movingCircle"></div>
+            <div onclick="toggleBreathingExercise()" id="breathingCircle"><p id="breathingText">Start Exercise</p></div>
         </div>
     </body>
 </html>

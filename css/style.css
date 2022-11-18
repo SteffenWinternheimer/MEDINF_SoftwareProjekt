@@ -106,5 +106,85 @@ body, html {
 }
 
 
+/*===================================*/
+/* Sub-Page */
+/*===================================*/
 
+#subPageGridContainer{
+    display: grid;
+    grid-template-columns: repeat(3,36%);
+    grid-template-rows: repeat(3,19%);
+    width: 55vw;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    grid-gap: 20px;
+}
+#subPageGridContainer *{
+    text-align: center;
+    font-family: Afterglow;
+    font-size: 31px;
+    cursor: pointer;
+}
+#subPageGridContainer * p{
+    margin: 0;
+    padding: 47px;
+}
 
+/*===================================*/
+/* breathing-Page */
+/*===================================*/
+#breathingCircle{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(160, 211, 244, 0.75);
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Afterglow;
+    font-size: 31px;
+    cursor: pointer;
+}
+
+#breathingCircle p{
+    margin: 0;
+    padding-top: 80px;
+}
+
+  
+.movingCircle{
+width: 30px;
+height: 30px;
+background: cyan;
+border-radius: 50%;
+position: absolute;
+top: 606px;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+margin: auto;
+animation: circle 6s linear infinite;
+}
+
+@keyframes circle{
+    0%{
+        transform:rotate(90deg)
+                translate(-120px)
+                rotate(0deg);
+    }
+    100%{
+        transform:rotate(450deg)
+                translate(-120px)
+                rotate(-360deg);
+    }
+}
+
+.breathingCircleIncrease{
+    width: 300px;
+    height: 300px;
+}
+  
+  
