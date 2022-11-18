@@ -1,5 +1,5 @@
 let isBreathing = 0;
-let maximumIterations = 3;
+let maximumIterations = 10;
 let currentIteration = 0;
 
 function toggleBreathingExercise(){
@@ -19,7 +19,6 @@ function breathIn() {
     if(isBreathing == 1){
         currentIteration++;
         let breathingText = document.getElementById("breathingText");
-        let breathingCircle = document.getElementById("breathingCircle");
         breathingText.textContent = "Breath In";
         window.setInterval(breathOut, 6000);
     }
@@ -36,6 +35,7 @@ function breathOut() {
 }
 
 function reset(){
+    currentIteration = 0;
     movingCircle.classList.remove("movingCircle");
     let breathingText = document.getElementById("breathingText");
     breathingText.textContent = "Start Exercise";

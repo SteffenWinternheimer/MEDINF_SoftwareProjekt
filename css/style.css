@@ -155,18 +155,18 @@ body, html {
 
   
 .movingCircle{
-width: 30px;
-height: 30px;
-background: cyan;
-border-radius: 50%;
-position: absolute;
-top: 606px;
-bottom: 0;
-left: 0;
-right: 0;
-overflow: hidden;
-margin: auto;
-animation: circle 6s linear infinite;
+    width: 30px;
+    height: 30px;
+    background: cyan;
+    border-radius: 50%;
+    position: absolute;
+    top: 606px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+    animation: circle 6s linear infinite;
 }
 
 @keyframes circle{
@@ -181,10 +181,3 @@ animation: circle 6s linear infinite;
                 rotate(-360deg);
     }
 }
-
-.breathingCircleIncrease{
-    width: 300px;
-    height: 300px;
-}
-  
-  
