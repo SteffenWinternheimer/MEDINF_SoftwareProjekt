@@ -1,0 +1,110 @@
+/*===================================*/
+/* General */
+/*===================================*/
+@font-face {
+    font-family: Afterglow;
+    src: url(../fonts/Afterglow-Regular.ttf);
+}
+
+
+/*===================================*/
+/* Start-Page */
+/*===================================*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg{
+    /* The image used */
+    background-image: url(../images/ezgif.com-gif-maker.png);
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mainGridContainer{
+    display: grid;
+    grid-template-columns: repeat(3,36%);
+    grid-template-rows: repeat(3,19%);
+    width: 55vw;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 14%;
+    grid-gap: 20px;
+}
+
+
+#mainGridContainer *{
+    text-align: center;
+    font-family: Afterglow;
+    font-size: 31px;
+    cursor: pointer;
+}
+#mainGridContainer * p{
+    margin: 0;
+    padding: 47px;
+}
+
+a:link{
+    text-decoration: none;
+    color:black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+a:active{
+    text-decoration: none;
+    color: black;
+}
+
+#imageItem{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url(../images/nice-compliment-quote-1-picture-quote-1.jpg);
+    background-size: contain;
+    width: 396px;
+    height: 414px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+#item1{
+    background-color: rgba(192, 223, 245, 0.75);
+    border-radius: 20px;
+}
+#item2{
+    background-color: rgba(172, 219,251, 0.75);
+    border-radius: 20px;
+}
+#item3{
+    background-color: rgba(172, 215, 245, 0.75);
+    border-radius: 20px;
+}
+#item4{
+    background-color: rgba(172, 215, 245, 0.75);
+    border-radius: 20px;
+}
+#item5{
+    background-color: rgba(160, 211, 244, 0.75);
+    border-radius: 20px;
+}
+#item6{
+    background-color: rgba(160, 211, 244, 0.75);
+    border-radius: 20px;
+}
+
+
+
+
