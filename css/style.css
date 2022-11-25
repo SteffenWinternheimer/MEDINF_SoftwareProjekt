@@ -1,9 +1,24 @@
 /*===================================*/
 /* General */
 /*===================================*/
+/*#region General*/
 @font-face {
     font-family: Afterglow;
     src: url(../fonts/Afterglow-Regular.ttf);
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg{
+    /* The image used */
+    background-image: url(../images/ezgif.com-gif-maker.png);
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a:link{
@@ -22,24 +37,12 @@ a:active{
     text-decoration: none;
     color: black;
 }
+/*#endregion General*/
 
 /*===================================*/
 /* Start-Page */
 /*===================================*/
-body, html {
-    height: 100%;
-    margin: 0;
-}
-.bg{
-    /* The image used */
-    background-image: url(../images/ezgif.com-gif-maker.png);
-    /* Full height */
-    height: 100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/*#region Start-Page*/
 
 #mainGridContainer{
     display: grid;
@@ -104,37 +107,47 @@ body, html {
     background-color: rgba(160, 211, 244, 0.75);
     border-radius: 20px;
 }
-
+/*#endregion Start-Page*/
 
 /*===================================*/
 /* Sub-Page */
 /*===================================*/
-
+/*#region Sub-Page*/
 #subPageGridContainer{
     display: grid;
     grid-template-columns: repeat(3,36%);
-    grid-template-rows: repeat(3,19%);
-    width: 55vw;
-    height: 70vh;
+    grid-template-rows: repeat(3,28%);
+    width: 50vw;
+    height: 28vh;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1%;
     grid-gap: 20px;
 }
-#subPageGridContainer *{
+#subPageGridContainer div{
     text-align: center;
     font-family: Afterglow;
-    font-size: 31px;
+    font-size: 27px;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
 }
 #subPageGridContainer * p{
     margin: 0;
-    padding: 47px;
+    padding: 19px;
 }
+
+#subPageGridContainer #imageItem{
+    width: 239px;
+    margin-left: 110px;
+}
+/*#endregion Sub-Page*/
 
 /*===================================*/
 /* breathing-Page */
 /*===================================*/
+/*#region breathing-Page*/
+
 #breathingCircle{
     width: 200px;
     height: 200px;
@@ -146,6 +159,7 @@ body, html {
     font-family: Afterglow;
     font-size: 31px;
     cursor: pointer;
+    margin-top: 175px;
 }
 
 #breathingCircle p{
@@ -180,4 +194,72 @@ body, html {
                 translate(-120px)
                 rotate(-360deg);
     }
+}
+/*#endregion breathing-Page*/
+
+
+/*===================================*/
+/* entertainingVideos-Page */
+/*===================================*/
+
+
+/*===================================*/
+/* emergencyContacts-Page */
+/*===================================*/
+
+#btnAddContact{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgba(160, 211, 244, 0.75);
+    width: 300px;
+    height: 100px;
+    font-family: Afterglow;
+    font-size: 25px;
+    border-radius: 43px;
+    border-color: black;
+    margin-top: 13px;
+}
+
+#contactGridContainer{
+    display: grid;
+    grid-template-columns: 62vw;
+    grid-template-rows: repeat(6,200px);
+    width: 62vw;
+    height: 50%;
+    margin-left: auto;
+    padding-top: 1%;
+    grid-gap: 20px;
+    margin-right: auto;
+}
+
+.contactItem{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-gap: 20px;
+}
+
+.contactImage{
+    background-color: rgba(160, 211, 244, 0.75);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contactImage input[type="file"] {
+    display: none;
+}
+
+
+.image-upload{
+    display: inline-block;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+
+.contactInformation{
+    background-color: rgba(160, 211, 244, 0.75);
+    border-radius: 30px;
 }
