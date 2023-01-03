@@ -20,6 +20,27 @@ function addContact(){
     let contactInformation = document.createElement("div");
     contactInformation.classList.add("contactInformation");
     
+
+    let contactName = document.createElement("input");
+    contactName.setAttribute("type","text");
+    contactName.setAttribute("class","contactNameField");
+    contactName.setAttribute("placeholder","Gib hier einen Namen ein...");
+
+    let phoneNumber = document.createElement("input");
+    phoneNumber.setAttribute("type","text");
+    phoneNumber.setAttribute("class","phoneNumber");
+    phoneNumber.setAttribute("placeholder","Gib hier die Telefonnummer ein...");
+
+    let phoneButton = document.createElement("button");
+    phoneButton.setAttribute("type","button");
+    phoneButton.setAttribute("onclick","callNumber();");
+    phoneButton.setAttribute("class","phoneButton");
+
+    contactInformation.appendChild(contactName);
+    contactInformation.appendChild(phoneNumber);
+    contactInformation.appendChild(phoneButton);
+    
+
     contactItem.appendChild(contactImage);
     contactItem.appendChild(contactInformation);
 
@@ -39,5 +60,12 @@ function addContact(){
             }
         }
     });
+}
 
+
+function callNumber(){
+    let buttonObject = document.querySelector('.phoneNumber');
+    let phoneNumberField = buttonObject.previousElementSibling.nextElementSibling;
+    let number = phoneNumberField.value;
+    document.location.href = "tel:"+number;
 }
